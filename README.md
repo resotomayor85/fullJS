@@ -5,7 +5,7 @@ This README would normally document whatever steps are necessary to get your app
 ### What is this repository for? ###
 
 * Quick summary
-> This repo is intended for practicing algorithms written in JavaScript
+> This repo is intended for practicing algorithms written in JavaScript!
 * Version
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
