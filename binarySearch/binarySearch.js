@@ -1,4 +1,4 @@
-   var arr = [1, 5, 31, 54, 87, 99, 102, 205, 254, 268, 309, 312, 378, 588, 590, 1000, 4535, 7523];
+   var arr = [-7 ,1, 5, 31, 54, 87, 99, 102, 205, 254, 268, 309, 312, 378, 588, 590, 750,1000, 4535, 7523];
 
    var data = document.getElementById("data").innerHTML;
    document.getElementById("data").innerHTML = (data + "[ " + arr + " ]").replace(/,/g, ", ");
