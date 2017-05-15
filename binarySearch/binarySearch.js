@@ -1,5 +1,8 @@
 var arr = [-7 ,1, 5, 31, 54, 87, 99, 102, 205, 254, 268, 309, 312, 378, 588, 590, 750, 1000, 4535, 7523];
 
+var arrToJSON = {
+    "arrData":[]
+};
 
 var data = document.getElementById("data").innerHTML;
 document.getElementById("data").innerHTML = (data + "[ " + arr + " ]").replace(/,/g, ", ");
@@ -74,5 +77,11 @@ function display() {
     }
     result.innerHTML = res;
   }
+  jsonFn(val);
   document.getElementById("keyValue").value = "";
+}
+
+function jsonFn(pval){  
+    arrToJSON.arrData.push(parseInt(pval));
+    document.getElementById("jsonOutput").innerHTML = JSON.stringify(arrToJSON);
 }
