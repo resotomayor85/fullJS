@@ -71,13 +71,7 @@
      font-size: 10pt;
  }
 
- #prevKeysFound {
-     font-size: 10pt;
- }
-
- #prevKeysNotFound {
-     /*color: crimson;
-            font-weight: 400;*/
+ #prevKeysFound, #prevKeysNotFound {
      font-size: 10pt;
  }
 
