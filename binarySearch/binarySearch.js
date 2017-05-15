@@ -1,7 +1,7 @@
-var arr = [-7 ,1, 5, 31, 54, 87, 99, 102, 205, 254, 268, 309, 312, 378, 588, 590, 750, 1000, 4535, 7523];
+var arr = [-7, 1, 5, 31, 54, 87, 99, 102, 205, 254, 268, 309, 312, 378, 588, 590, 750, 1000, 4535, 7523];
 
 var arrToJSON = {
-    "arrData":[]
+  arrData: []
 };
 
 var data = document.getElementById("data").innerHTML;
@@ -43,37 +43,21 @@ function display() {
     if (input !== -1) {
       var collection = document.getElementById("data").innerHTML;
       collection = (data + "[ " + arr + " ]").replace(/,/g, ", ");
-      collection = collection.replace(
-        val,
-        "<span class='badge'>" + val + "</span>"
-      );
-      /* < sub > " + input + " < /sub>"*/
+      collection = collection.replace(val, "<span class='badge'>" + val + "</span>");
+      /* <sub> " + input + " </sub>"*/
       document.getElementById("data").innerHTML = collection;
 
-      res =
-        "GREAT, The key <b>" +
-        val +
-        "</b> is located at position <b>" +
-        rank(val, arr) +
-        "</b>.";
-      result.className = "alert alert-success"; //found
+      res = "GREAT, The key <b>" + val + "</b> is located at position <b>" + rank(val, arr) + result.className = "alert alert-success"; //found
 
       prevKeysFound.push(val);
-      document.getElementById("prevKeysFound").innerHTML = ("[ " +
-        prevKeysFound +
-        " ]").replace(/,/g, ", ");
+      document.getElementById("prevKeysFound").innerHTML = ("[ " + prevKeysFound + " ]").replace(/,/g, ", ");
     } else {
-      document.getElementById("data").innerHTML = (data +
-        "[ " +
-        arr +
-        " ]").replace(/,/g, ", ");
+      document.getElementById("data").innerHTML = (data + "[ " + arr + " ]").replace(/,/g, ", ");
       res = "SORRY. The key <b>" + val + "</b> wasn't found in the collection.";
       result.className = "alert alert-danger"; //notFound
 
       prevKeysNotFound.push(val);
-      document.getElementById("prevKeysNotFound").innerHTML = ("[ " +
-        prevKeysNotFound +
-        " ]").replace(/,/g, ", ");
+      document.getElementById("prevKeysNotFound").innerHTML = ("[ " + prevKeysNotFound + " ]").replace(/,/g, ", ");
     }
     result.innerHTML = res;
   }
@@ -81,7 +65,7 @@ function display() {
   document.getElementById("keyValue").value = "";
 }
 
-function jsonFn(pval){  
-    arrToJSON.arrData.push(parseInt(pval));
-    document.getElementById("jsonOutput").innerHTML = JSON.stringify(arrToJSON);
+function jsonFn(pval) {
+  arrToJSON.arrData.push(parseInt(pval));
+  document.getElementById("jsonOutput").innerHTML = JSON.stringify(arrToJSON);
 }
