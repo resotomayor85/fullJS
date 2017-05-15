@@ -1,0 +1,86 @@
+ html {
+     font-family: sans-serif;
+     color: #333;
+ }
+
+ .box {
+     background-color: whitesmoke;
+     box-shadow: 3px 3px 5px 6px #ccc;
+     padding: 10px 15px;
+     /*margin: auto;*/
+ }
+
+ h1 {
+     border-bottom: 0.25rem solid rgb(51, 51, 51);
+     padding: 5px;
+     text-align: center;
+     /*text-shadow: 1px 1px 1px dodgerblue;*/
+ }
+
+ #data {
+     font-weight: 500;
+     font-size: 12pt;
+ }
+
+ #result {
+     padding: 5px;
+     margin-bottom: 10px;
+     font-size: 12pt;
+ }
+
+ .found {
+     color: green;
+     background-color: #E2FFD5;
+     border: 2px solid green;
+     opacity: 0.75;
+     margin-bottom: 10px;
+ }
+
+ .notFound {
+     color: darkred;
+     background-color: #FFDCE1;
+     border: 2px solid darkred;
+     opacity: 0.75;
+     margin-bottom: 10px;
+ }
+
+ .highlight {
+     background-color: gold;
+     padding: 1px;
+     border: 1px solid black;
+     border-radius: 3px;
+ }
+
+ sub {
+     color: white;
+     background-color: crimson;
+     padding: 1px;
+     border: 1px solid crimson;
+     border-radius: 5px;
+     font-size: 6pt;
+ }
+
+ #errorMsg {
+     color: crimson;
+     display: none;
+     font-size: 10pt;
+ }
+
+ #prevKeysFound {
+     /*color: green;
+            font-weight: 400;*/
+     font-size: 10pt;
+ }
+
+ #prevKeysNotFound {
+     /*color: crimson;
+            font-weight: 400;*/
+     font-size: 10pt;
+ }
+
+ .badge2{
+     color: #333;
+     background-color: gold;
+ }
+
+ 
