@@ -1,4 +1,4 @@
-var arr = [-7, 1, 5, 31, 54, 87, 99, 102, 205, 254, 268, 309, 312, 378, 588, 590, 750, 1000, 4535, 7523];
+var arr = [-7, 1, 5, 31, 54, 87, 99, 102, 205, 254, 268, 309, 312, 378, 588, 590, 750, 1000, 4535, 7570];
 
 var arrToJSON = {
   arrData: []
@@ -47,7 +47,8 @@ function display() {
       /* <sub> " + input + " </sub>"*/
       document.getElementById("data").innerHTML = collection;
 
-      res = "GREAT, The key <b>" + val + "</b> is located at position <b>" + rank(val, arr) + result.className = "alert alert-success"; //found
+      res = "GREAT, The key <b>" + val + "</b> is located at position <b>" + rank(val, arr);
+      result.className = "alert alert-success"; //found
 
       prevKeysFound.push(val);
       document.getElementById("prevKeysFound").innerHTML = ("[ " + prevKeysFound + " ]").replace(/,/g, ", ");
